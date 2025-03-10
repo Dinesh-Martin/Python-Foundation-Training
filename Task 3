@@ -1,0 +1,30 @@
+The traveler needs to pay the hotel one link per day for six days while ensuring that no more than one link is broken. The goal is to make the fewest cuts while allowing payment in exact amounts each day.
+
+Optimal Cutting Strategy
+The best way to achieve this is to cut the chain in such a way that allows for incremental payments using separate pieces. The trick is to break one specific link, which will allow all payments to be made properly.
+
+Steps to Solve:
+Break the second link (Link #2) – This results in:
+A single free link (Link #2).
+A remaining chain of four links (Links #3, #4, #5, #6).
+A separate chain of one link (Link #1).
+
+
+How to Pay Each Day:
+Day 1: Give Link #2 to the hotel.
+Day 2: Give Link #1, take back Link #2 (now the manager has two links).
+Day 3: Give the four-link chain (Links #3–6), take back Links #1 and #2 (now the manager has three links).
+Day 4: Give Link #2 again (now the manager has four links).
+Day 5: Give Link #1, take back Link #2 (now the manager has five links).
+Day 6: Give Link #2 again (now the manager has six links).
+Why This Works:
+Only one link is broken (as required).
+The traveler is always able to provide exact payment by exchanging chains efficiently.
+Thus, breaking the second link is the most efficient way to pay for six days while adhering to the rules!
+
+
+
+
+
+
+
