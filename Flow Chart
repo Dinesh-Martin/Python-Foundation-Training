@@ -1,0 +1,40 @@
+ flowchart for calculating Simple Interest (SI) using the formula:
+
+SI= (P*R*T)/100
+
+
+Flowchart Steps:
+Start
+
+Input P, R, T (Principal, Rate, Time)
+Calculate SI using the formula:
+
+​
+SI= (P*R*T)/100
+
+
+Display SI
+End
+
+
+Flowchart Representation
+
+   ┌───────────┐
+   │   Start   │
+   └────┬──────┘
+        ↓
+   ┌─────────────────┐
+   │ Input P, R, T   │
+   └────┬────────────┘
+        ↓
+   ┌────────────────────────┐
+   │ SI = (P × R × T) / 100 │
+   └────┬───────────────────┘
+        ↓
+   ┌─────────────────┐
+   │ Display SI      │
+   └────┬────────────┘
+        ↓
+   ┌───────────┐
+   │    End    │
+   └───────────┘
