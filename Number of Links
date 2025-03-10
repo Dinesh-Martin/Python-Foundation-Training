@@ -1,0 +1,33 @@
+The traveler must pay exactly one link per day for n days while ensuring that no more than one link is broken at any given time. The challenge is to minimize the number of cuts while allowing the traveler to make exact payments.
+
+Step 1: Recognizing the Optimal Strategy
+Instead of cutting each link daily, the best approach follows the binary system (powers of 2). This allows the traveler to pay using a combination of chain segments.
+
+For example, to pay for 100 days, we represent 100 in powers of 2:
+
+100=64+32+4
+
+Thus, if we break the chain to create these segments (64, 32, and 4), we can pay any amount from 1 to 100 by exchanging pieces properly.
+
+Step 2: General Formula
+The optimal number of cuts corresponds to the number of power-of-2 segments needed to sum up to n. This is equal to the number of bits in the binary representation of n, which is approximately:
+
+⌊log base 2n]
+
+
+This gives the minimum number of cuts required.
+
+Step 3: Applying to n = 100
+For 100 days, we compute:
+
+⌊log 2 100⌋=⌊6.64⌋=6
+
+Thus, the minimum number of cuts required is 6.
+
+Final Answer
+For n days, the least number of cuts required is:
+
+⌊log 2n⌋
+
+
+This ensures that we can always pay the exact amount each day using a minimal number of cuts.
