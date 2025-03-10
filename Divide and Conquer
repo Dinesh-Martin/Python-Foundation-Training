@@ -1,0 +1,39 @@
+Divide and Conquer Approach for Sorting the List:
+The Divide and Conquer method is commonly used in sorting algorithms like Merge Sort or Quick Sort. Let's use Merge Sort to sort the list [6, 5, 1, 4, 3, 2].
+
+Step 1: Divide
+We recursively divide the list into smaller sublists until each contains only one element.
+
+[6, 5, 1, 4, 3, 2]
+
+
+Divide into two halves:
+
+[6, 5, 1]    [4, 3, 2]
+
+
+Divide again:
+
+[6, 5]  [1]    [4, 3]  [2]
+
+Keep dividing:
+
+[6] [5]  [1]    [4] [3]  [2]
+
+Now, all sublists contain single elements.
+
+Step 2: Conquer (Merge)
+We now merge them back in sorted order.
+
+Merge [6] and [5] → [5, 6]
+Merge [4] and [3] → [3, 4]
+Merge [5, 6] and [1] → [1, 5, 6]
+Merge [3, 4] and [2] → [2, 3, 4]
+Merge [1, 5, 6] and [2, 3, 4] → [1, 2, 3, 4, 5, 6]
+
+
+
+Final Sorted List:
+
+
+[1, 2, 3, 4, 5, 6]
