@@ -1,0 +1,24 @@
+To minimize the total travel distance for all students, we need to find the optimal location for the school along the straight-line path between towns A and B.
+
+Step 1: Define Variables
+Let the school be located x km from town A along the straight-line path toward town B.
+Town A is at 0 km, and town B is at 3 km.
+Students in A = 100, and students in B = 50.
+Step 2: Minimize the Weighted Distance
+The total travel distance is given by:
+
+Total Distance=(100×x)+(50×(3−x))
+
+100−50=0
+
+100x=50(3−x)
+
+100x+50x=150
+
+150x=150
+
+x=1
+
+
+Conclusion:
+The school should be built 1 km from town A along the direct path to town B to minimize the total travel distance of all students.
