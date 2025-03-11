@@ -1,0 +1,45 @@
+
+ CRUD operations on an array in Python
+
+Creating  an empty list
+data = []
+
+1. Create Operation
+def create_element(element):
+    data.append(element)
+    print(f"Element {element} added successfully.")
+
+2. Read Operation
+def read_elements():
+    if not data:
+        print("The array is empty.")
+    else:
+        print("Current Array:", data)
+
+3. Update Operation
+def update_element(index, new_value):
+    if 0 <= index < len(data):
+        old_value = data[index]
+        data[index] = new_value
+        print(f"Element at index {index} updated from {old_value} to {new_value}.")
+    else:
+        print("Invalid index. Update failed.")
+
+4. Delete Operation
+def delete_element(index):
+    if 0 <= index < len(data):
+        removed_element = data.pop(index)
+  
+        print(f"Element {removed_element} at index {index} removed successfully.")
+    else:
+        print("Invalid index. Deletion failed.")
+
+5. Input Sample Usage
+create_element(10)
+create_element(20)
+create_element(30)
+read_elements()
+update_element(1, 25)
+read_elements()
+delete_element(0)
+read_elements()
