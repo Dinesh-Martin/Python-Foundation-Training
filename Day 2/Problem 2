@@ -1,0 +1,32 @@
+Linear Search in Array:
+
+def linear_search(arr, key):
+    for i in range(len(arr)):
+        if arr[i] == key:
+            return i  # Element found, return index
+    return -1  # Element not found
+
+User input for array elements:
+
+numbers = list(map(int, input("Enter the numbers separated by spaces: ").split()))
+
+Taking the key to search:
+
+key = int(input("Enter the number to search: "))
+result = linear_search(numbers, key)
+
+if result != -1:
+    print(f"Element {key} found at index {result}")
+else:
+    print(f"Element {key} not found in the array")
+
+
+Sample Output:
+
+Enter the numbers separated by spaces: 10 20 30 40 50
+Enter the number to search: 30
+Element 30 found at index 2
+
+Enter the numbers separated by spaces: 5 15 25 35
+Enter the number to search: 40
+Element 40 not found in the array
