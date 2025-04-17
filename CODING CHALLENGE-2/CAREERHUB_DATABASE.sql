@@ -47,7 +47,7 @@ CREATE TABLE Applications (
     FOREIGN KEY (ApplicantID) REFERENCES Applicants(ApplicantID)
 );
 
--- ✅ INSERT INTO Companies FIRST
+
 INSERT INTO Companies VALUES
 (1, 'TechNova Inc.', 'New York'),
 (2, 'DataWave Solutions', 'San Francisco'),
